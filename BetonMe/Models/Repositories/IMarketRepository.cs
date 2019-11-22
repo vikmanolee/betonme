@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BetonMe.Models.Repositories
 {
-    interface IMarketRepository
+    public interface IMarketRepository
     {
         IEnumerable<Market> AllMarkets { get; }
         Market GetMarketById(int marketId);

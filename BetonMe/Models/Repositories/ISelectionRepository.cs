@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BetonMe.Models.Repositories
 {
-    interface ISelectionRepository
+    public interface ISelectionRepository
     {
         IEnumerable<Selection> AllSelections { get; }
         Selection GetSelectionById(int selectionId);

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BetonMe.Models.Repositories
 {
-    interface IEventRepository
+    public interface IEventRepository
     {
         IEnumerable<Event> AllEvents { get; }
         Event GetEventById(int eventId);

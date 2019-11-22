@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Events";
+}
+
+@model IEnumerable<Event>
+
+<div class="text-center">
+    <h1 class="display-4">Events</h1>
+</div>
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h2><a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Details" asp-route-id="@item.Id">@item.Name</a></h2>
+        </div>
+    }
+</div>
+
