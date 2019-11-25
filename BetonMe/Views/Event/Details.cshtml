@@ -4,7 +4,10 @@
 <h2>@Model.Name</h2>
 
 <div>
-    <div>
-        <h3>@Model.Name</h3>
-    </div>
+    <dl class="row">
+        @foreach (var market in Model.Markets)
+        {
+            <partial name="_MarketBlock" model="market" />
+        }
+    </dl>
 </div>

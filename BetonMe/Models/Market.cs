@@ -10,5 +10,6 @@ namespace BetonMe.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public Event Event { get; set; }
+        public List<Selection> Selections { get; set; }
     }
 }
